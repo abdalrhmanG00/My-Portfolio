@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Inventory Management System',
       description: 'Developed a RESTful API using ASP.NET Core 8 with Clean Architecture and CQRS (MediatR). Implemented inventory features: product/category management, transaction tracking, and low-stock alerts. Added authentication, role-based access control, and automated workflows (emails for registration, password resets, system alerts).',
-      demo: '#',
+      demo: 'https://github.com/abdalrhman80/InventoryManagementSystme',
       githubLink: 'https://github.com/abdalrhman80/InventoryManagementSystme',
       date: 'Aug 2025',
       technologies: [
@@ -35,7 +35,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'E-Learning Platform',
       description: 'Built a modular RESTful API with ASP.NET Core 8, following Clean Architecture principles. Enabled course management, content uploads, progress tracking, and automated email notifications. Supported authentication (traditional login, Google OAuth 2.0) and role-based access control.',
-      demo: '#',
+      demo: 'https://github.com/abdalrhman80/E-Learning-Platform',
       githubLink: 'https://github.com/abdalrhman80/E-Learning-Platform',
       date: 'Jul 2025',
       technologies: [
@@ -57,7 +57,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Restaurants API',
       description: 'Designed a modular Web API using ASP.NET Core 8, integrating CQRS (MediatR). Applied layered architecture: Presentation, Application, Domain, and Infrastructure. Implemented unit/integration tests to ensure API reliability.',
-      demo: '#',
+      demo: 'https://github.com/abdalrhman80/Restaurants',
       githubLink: 'https://github.com/abdalrhman80/Restaurants',
       date: 'Jun 2025',
       technologies: [
@@ -136,7 +136,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'Personal Dashboard',
-      description: 'Full-stack productivity application with three main sections: Bookmarks, Todos, and Notes. Features complete CRUD operations, customizable backgrounds, and responsive design built with Angular and modern UI components.',
+      description: 'Frontend application with three main sections: Bookmarks, Todos, and Notes. Features complete CRUD operations, customizable backgrounds, and responsive design built with Angular.',
       demo: 'https://abdalrhman80.github.io/Personal-Dashboard/bookmarks',
       githubLink: 'https://github.com/abdalrhman80/Personal-Dashboard',
       date: 'Mar 2024',
