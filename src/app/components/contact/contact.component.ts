@@ -25,7 +25,6 @@ export class ContactComponent implements OnInit {
   }
   async sendEmail() {
     this.showSuccess();
-    this.contactForm.reset();
     emailjs.init("OBd9AtgMZJbmFzwY3");
     await emailjs.send("service_ssorf74", "template_bwv2qfq", {
       from_name: this.contactForm.value.name,
@@ -34,5 +33,6 @@ export class ContactComponent implements OnInit {
       message: this.contactForm.value.message,
       from_email: this.contactForm.value.email,
     });
+    this.contactForm.reset();
   }
 }
