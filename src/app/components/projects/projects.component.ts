@@ -12,8 +12,8 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Inventory Management System',
       description: 'Developed a RESTful API using ASP.NET Core 8 with Clean Architecture and CQRS (MediatR). Implemented inventory features: product/category management, transaction tracking, and low-stock alerts. Added authentication, role-based access control, and automated workflows (emails for registration, password resets, system alerts).',
-      demo: 'https://github.com/abdalrhman80/InventoryManagementSystme',
-      githubLink: 'https://github.com/abdalrhman80/InventoryManagementSystme',
+      demo: 'https://github.com/abdalrhmanG00/InventoryManagementSystme',
+      githubLink: 'https://github.com/abdalrhmanG00/InventoryManagementSystme',
       date: 'Aug 2025',
       technologies: [
         { name: 'C#' },
@@ -35,8 +35,8 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'E-Learning Platform',
       description: 'Built a modular RESTful API with ASP.NET Core 8, following Clean Architecture principles. Enabled course management, content uploads, progress tracking, and automated email notifications. Supported authentication (traditional login, Google OAuth 2.0) and role-based access control.',
-      demo: 'https://github.com/abdalrhman80/E-Learning-Platform',
-      githubLink: 'https://github.com/abdalrhman80/E-Learning-Platform',
+      demo: 'https://github.com/abdalrhmanG00/E-Learning-Platform',
+      githubLink: 'https://github.com/abdalrhmanG00/E-Learning-Platform',
       date: 'Jul 2025',
       technologies: [
         { name: 'C#' },
@@ -57,8 +57,8 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Restaurants API',
       description: 'Designed a modular Web API using ASP.NET Core 8, integrating CQRS (MediatR). Applied layered architecture: Presentation, Application, Domain, and Infrastructure. Implemented unit/integration tests to ensure API reliability.',
-      demo: 'https://github.com/abdalrhman80/Restaurants',
-      githubLink: 'https://github.com/abdalrhman80/Restaurants',
+      demo: 'https://github.com/abdalrhmanG00/Restaurants',
+      githubLink: 'https://github.com/abdalrhmanG00/Restaurants',
       date: 'Jun 2025',
       technologies: [
         { name: 'C#' },
@@ -81,7 +81,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Shopping Cart (E-commerce)',
       description: 'Developed an MVC app with ASP.NET Core 6 and a 3-tier architecture. Built Admin (management) and Customer (browsing, cart, and checkout) areas. Integrated Stripe for secure payments.',
       demo: 'http://shoppingcart.runasp.net',
-      githubLink: 'https://github.com/abdalrhman80/ShoppingCartMVC',
+      githubLink: 'https://github.com/abdalrhmanG00/ShoppingCartMVC',
       date: 'Nov 2024',
       technologies: [
         { name: 'C#' },
@@ -114,8 +114,8 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Fresh Cart (Frontend)',
       description: 'E-Commerce frontend application built with Angular. Features user management (registration, login, password reset), product browsing with detailed views, cart and wishlist functionality, and secure payment integration through external APIs.',
-      demo: 'https://abdalrhman80.github.io/Fresh-Cart-App',
-      githubLink: 'https://github.com/abdalrhman80/Fresh-Cart-App',
+      demo: 'https://abdalrhmanG00.github.io/Fresh-Cart-App',
+      githubLink: 'https://github.com/abdalrhmanG00/Fresh-Cart-App',
       date: 'Feb 2024',
       technologies: [
         { name: 'TypeScript' },
@@ -137,8 +137,8 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Personal Dashboard',
       description: 'Frontend application with three main sections: Bookmarks, Todos, and Notes. Features complete CRUD operations, customizable backgrounds, and responsive design built with Angular.',
-      demo: 'https://abdalrhman80.github.io/Personal-Dashboard/bookmarks',
-      githubLink: 'https://github.com/abdalrhman80/Personal-Dashboard',
+      demo: 'https://abdalrhmanG00.github.io/Personal-Dashboard/bookmarks',
+      githubLink: 'https://github.com/abdalrhmanG00/Personal-Dashboard',
       date: 'Mar 2024',
       technologies: [
         { name: 'TypeScript' },
