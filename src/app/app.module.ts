@@ -21,6 +21,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ExperienceDescComponent } from './components/experience-desc/experience-desc.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AboutComponent } from './components/about/about.component';
     ProjectDescComponent,
     SidebarComponent,
     LoaderComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
+    ExperienceDescComponent
   ],
   imports: [
     BrowserModule,

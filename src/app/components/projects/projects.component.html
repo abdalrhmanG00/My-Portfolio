@@ -6,7 +6,7 @@
             <div class="row g-3">
                 <div class="col-xl-4 col-lg-6 px-0" *ngFor="let project of projects">
                     <div class="project-card main-card cursor-pointer p-4 py-4 mx-2 rounded-4 mb-3 mb-lg-0"
-                        (click)="showProjectDes(project, $event)">
+                        (click)="showProjectDesc(project, $event)">
                         <div class="card-header pb-2">
                             <h5 class="my-2 fw-bolder">{{project.title}}</h5>
                             <a [href]="project.demo" target="_blank" pTooltip="Live demo" tooltipPosition="top">

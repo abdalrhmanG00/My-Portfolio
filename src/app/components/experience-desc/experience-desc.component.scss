@@ -1,0 +1,84 @@
+h3,
+.experience,
+.experience-desc {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.link,
+.tech-badge {
+    border: 1px solid var(--secondary);
+    transition: all .2s;
+
+    &:hover {
+        background-color: var(--secondary);
+    }
+}
+
+.tech-badge {
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--secondary);
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        color: var(--black);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px var(--main-shadow);
+    }
+}
+
+.overview {
+    position: relative;
+
+    .overview-layer {
+        background-color: var(--overview-layer);
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        cursor: zoom-in;
+        transition: opacity .5s;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &:hover .overview-layer {
+        opacity: 1;
+    }
+}
+
+.experience-tag {
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--secondary);
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        color: var(--black);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px var(--main-shadow);
+    }
+}
+
+:host ::ng-deep {
+    .p-link:focus-visible {
+        box-shadow: 0 0 0 0.15rem var(--focus-color);
+    }
+}

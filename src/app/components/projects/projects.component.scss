@@ -23,15 +23,16 @@
     border: 1px solid var(--secondary);
     transition: all 0.2s ease;
     text-decoration: none;
-    
+
     &:hover {
         background-color: var(--hover-color);
         border-color: var(--hover-color);
-        color: var(--white);
+        color: var(--black);
         transform: translateY(-1px);
         box-shadow: 0 2px 4px var(--main-shadow);
     }
 }
+
 
 i {
     padding: 8px;

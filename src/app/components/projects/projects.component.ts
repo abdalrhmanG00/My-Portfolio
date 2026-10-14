@@ -10,23 +10,25 @@ export class ProjectsComponent implements OnInit {
   chipTextArr: string[] = [];
   projects: any[] = [
     {
-      title: 'Inventory Management System',
-      description: 'Developed a RESTful API using ASP.NET Core 8 with Clean Architecture and CQRS (MediatR). Implemented inventory features: product/category management, transaction tracking, and low-stock alerts. Added authentication, role-based access control, and automated workflows (emails for registration, password resets, system alerts).',
-      demo: 'https://github.com/abdalrhmanG00/InventoryManagementSystme',
-      githubLink: 'https://github.com/abdalrhmanG00/InventoryManagementSystme',
-      date: 'Aug 2025',
+      title: 'Project Management SaaS',
+      description: 'Built a Multi-tenant Project Management SaaS backend where each company gets its own private workspace, and one person can belong to several companies with their data kept fully separate and secure. Designed a secure sign-up and login experience with email verification, password recovery, and multi-device sessions, plus workspace controls such as Free/Pro plans, ownership transfer, and disabling or reactivating a workspace. Designed a secure sign-up and login experience with email verification, password recovery, and multi-device sessions, plus workspace controls such as Free/Pro plans, ownership transfer, and disabling or reactivating a workspace. Delivered project and task management: create projects, add team members, and assign tasks with priorities, due dates and status tracking, with safe delete and restore so no work is lost accidentally.',
+      demo: 'https://pmsass.apidog.io',
+      githubLink: 'https://github.com/abdalrhmanG00/ProjectManagementSystem',
+      date: 'Aug 2026',
       technologies: [
         { name: 'C#' },
-        { name: 'ASP.NET Core 8' },
+        { name: 'ASP.NET Core 10' },
         { name: 'Clean Architecture' },
-        { name: 'CQRS & MediatR' },
         { name: 'Entity Framework Core' },
+        { name: 'CQRS & MediatR' },
         { name: 'MS SQL' },
+        { name: 'Redis,' },        
         { name: 'ASP.NET Identity' },
         { name: 'JWT' },
+        { name: 'FluentValidation,' },
         { name: 'SMTP Email Services' },
+        { name: 'Background Services (Hangfire),' },
         { name: 'Serilog' },
-        { name: 'Fluent Validation' },
         { name: 'AutoMapper' }
       ],
       overview: [
@@ -34,21 +36,49 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'E-Learning Platform',
-      description: 'Built a modular RESTful API with ASP.NET Core 8, following Clean Architecture principles. Enabled course management, content uploads, progress tracking, and automated email notifications. Supported authentication (traditional login, Google OAuth 2.0) and role-based access control.',
-      demo: 'https://github.com/abdalrhmanG00/E-Learning-Platform',
+      description: 'Built a modular RESTful API with ASP.NET Core, following Clean Architecture, with nested course > chapter > lesson management and ordering. Implemented cart and checkout flow with Paymob payment integration. Built enrollment and lesson-level progress tracking, plus quizzes with auto-graded attempts and scoring. Supported authentication (JWT with refresh tokens, Google OAuth 2.0) and role-based access control for students, instructors, and admins. Handled media uploads for course thumbnails, chapter images, and lesson videos via local storage and Cloudinary.',
+      demo: 'https://share.apidog.com/3a1323dc-0c39-447b-ab9a-5095edfdaa7b',
       githubLink: 'https://github.com/abdalrhmanG00/E-Learning-Platform',
       date: 'Jul 2025',
       technologies: [
         { name: 'C#' },
         { name: 'ASP.NET Core 8' },
         { name: 'Clean Architecture' },
+        { name: 'CQRS & MediatR' },        
         { name: 'Entity Framework Core' },
         { name: 'MS SQL' },
         { name: 'ASP.NET Identity' },
         { name: 'JWT' },
         { name: 'Google OAuth 2.0' },
         { name: 'SMTP Email Services' },
+        { name: 'Paymob payment gateway' },
+        { name: 'Cloudinary,' },
         { name: 'Serilog' },
+        { name: 'AutoMapper' }
+      ],
+      overview: [
+      ]
+    },
+    {
+      title: 'Talabat - E-Commerce',
+      description: 'Built a fully-featured e-commerce REST API using ASP.NET Core 10, following Clean Architecture and CQRS. Implemented JWT authentication with refresh tokens, email confirmation, and role-based access control using ASP.NET Identity. Implemented core modules: product catalog with multi-picture support, basket (Redis), orders, reviews, wishlists, and refund request management. Applied Specification Pattern, Unit of Work, and Repository Pattern for clean data access.',
+      demo: 'https://share.apidog.com/847b706a-e07a-4d5a-94b8-c6d6d2c9242a',
+      githubLink: 'https://github.com/abdalrhmanG00/Talabat',
+      date: 'Aug 2025',
+      technologies: [
+        { name: 'C#' },
+        { name: 'ASP.NET Core 10' },
+        { name: 'Clean Architecture' },
+        { name: 'CQRS & MediatR' },
+        { name: 'Entity Framework Core' },
+        { name: 'MS SQL' },
+        { name: 'Redis,' },
+        { name: 'ASP.NET Identity' },
+        { name: 'JWT' },
+        { name: 'SMTP Email Services' },
+        { name: 'Serilog' },
+        { name: 'Fawaterak payment gateway' },
+        { name: 'Fluent Validation' },
         { name: 'AutoMapper' }
       ],
       overview: [
@@ -134,27 +164,6 @@ export class ProjectsComponent implements OnInit {
         'assets/images/overview-Images/freshCart/freshCart7.png',
       ]
     },
-    {
-      title: 'Personal Dashboard',
-      description: 'Frontend application with three main sections: Bookmarks, Todos, and Notes. Features complete CRUD operations, customizable backgrounds, and responsive design built with Angular.',
-      demo: 'https://abdalrhmanG00.github.io/Personal-Dashboard/bookmarks',
-      githubLink: 'https://github.com/abdalrhmanG00/Personal-Dashboard',
-      date: 'Mar 2024',
-      technologies: [
-        { name: 'TypeScript' },
-        { name: 'Angular' },
-        { name: 'PrimeNG' },
-        { name: 'Bootstrap' },
-        { name: 'SASS' },
-        { name: 'HTML' }
-      ],
-      overview: [
-        'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard1.png',
-        'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard2.png',
-        'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard3.png',
-        'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard4.png',
-      ]
-    }
   ]
 
   constructor(public _Router: Router) { }
@@ -163,7 +172,7 @@ export class ProjectsComponent implements OnInit {
     $('.projectSection').fadeOut(0).fadeIn(600);
   }
 
-  showProjectDes(project: any, event: any) {
+  showProjectDesc(project: any, event: any) {
     if (event.target.classList.contains('fa-link'))
       return
     else {

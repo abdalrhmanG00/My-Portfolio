@@ -1,0 +1,38 @@
+<!-- <app-loader></app-loader> -->
+<section class="experienceSection my-3">
+    <h3 class="title-section">Experience</h3>
+    <div class="container">
+        <div class="ex mt-4">
+            <div class="row g-3">
+                <div class="col-xl-4 col-lg-6 px-0" *ngFor="let exp of experiences">
+                    <div class="exp-card main-card cursor-pointer p-4 py-4 mx-2 rounded-4 mb-3 mb-lg-0"
+                        (click)="showExperienceDesc(exp, $event)">
+                        <div class="card-header pb-2">
+                            <h5 class="my-2 fw-bolder">{{exp.title}}</h5>
+                            <a [href]="exp.link" target="_blank" pTooltip="link" tooltipPosition="top">
+                                <i class="fa-solid fa-link color-gray p-2"></i>
+                            </a>
+                        </div>
+                        <div class="card-body pb-2 my-3 fw-normal">
+                            <p class="mb-0 color-gray">
+                                {{exp.description.split(" ").slice(0, 13).join(" ")}}...</p>
+                            <div class="date d-inline-block rounded-pill px-3 mt-4 mb-2">{{exp.date}}</div>
+                        </div>
+                        <div class="card-footer d-flex flex-wrap">
+                            <div class="experience-tags d-flex flex-wrap">
+                                <div class="experience-tag me-2 mb-2 px-2 py-1 rounded-pill" *ngIf="exp.company">
+                                    <i class="fa-solid fa-building me-1"></i>
+                                    {{exp.company}}
+                                </div>
+                                <div class="experience-tag me-2 mb-2 px-2 py-1 rounded-pill">
+                                    <i class="fa-solid fa-location-dot me-1"></i>
+                                    {{exp.location}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

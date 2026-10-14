@@ -1,0 +1,59 @@
+.exp-card {
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+            color: var(--white);
+        }
+    }
+
+    .card-header,
+    .card-body {
+        border-bottom: 1px solid var(--secondary);
+    }
+}
+
+.experience-tag {
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--secondary);
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        color: var(--black);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px var(--main-shadow);
+    }
+}
+
+i {
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.date {
+    padding: 2px;
+    color: var(--hover-color);
+    font-size: 12px;
+    border: 1px solid var(--secondary);
+    transition: all .2s;
+}
+
+.fa-link {
+    border: 1px solid var(--secondary);
+    transition: all .2s;
+    
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 2px var(--main-shadow);
+        border-color: var(--hover-color);
+    }
+}

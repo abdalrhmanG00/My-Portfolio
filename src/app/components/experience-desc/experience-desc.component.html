@@ -1,0 +1,32 @@
+<!-- <app-loader></app-loader> -->
+<section class="experienceDescSection mt-5">
+    <div class="container">
+        <h3 class="title-section pt-md-3 pb-4">{{experience.title}}</h3>
+        <div class="experience font-sm pb-4 mt-4">
+            <div class="experience-links d-flex align-items-center justify-content-center mb-3">
+                <a *ngIf="experience.link !== '#'" [href]="experience.link" target="_blank"
+                    class="link py-1 px-3 rounded-pill color-gray me-2">
+                    <i class="fa-solid fa-link me-2"></i>
+                    <span>Link</span>
+                </a>
+            </div>
+
+            <div class=" d-flex flex-wrap justify-content-center align-items-center  ">
+                <div class="experience-tags d-flex flex-wrap">
+                    <div class="experience-tag me-2 px-2 py-1 rounded-pill" *ngIf="experience.company">
+                        <i class="fa-solid fa-building me-1"></i>
+                        {{experience.company}}
+                    </div>
+                    <div class="experience-tag me-2 px-2 py-1 rounded-pill">
+                        <i class="fa-solid fa-location-dot me-1"></i>
+                        {{experience.location}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-desc mt-4 mb-4 pb-4">
+            <p class="color-gray">{{experience.description}}</p>
+        </div>
+    </div>
+</section>
